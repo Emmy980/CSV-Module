@@ -42,53 +42,55 @@ file_csv = r"C:\Users\emmab\OneDrive\Desktop\proo\file.csv"
 
 
 ### task 5: Create another csv file named grades_summary.csv. Write a summary that shows how many students fall into each grade category.
-with open("grades_summary.csv", "w", newline="") as summary:
-    writer = csv.writer(summary)
-    writer.writerow(["Grade", "Number of Students"])
-    empty_list = []
-    A_students = []
-    B_students = []
-    C_students = []
-    D_students = []
-    E_students = []
-    F_students = []
-    with open(file_csv, "r") as file:
-        reader = csv.reader(file)
-        for row in reader:
-            empty_list.append(row)
-        # to find the students that got an A:
-        for row in empty_list:
-            if "A" in row:
-                A_students.append(row)
-        # to find the students that got an B:
-        for row in empty_list:
-            if "B" in row:
-                B_students.append(row)
-        # to find the students that got an C:
-        for row in empty_list:
-            if "C" in row:
-                C_students.append(row)
-        # to find the students that got an D:
-        for row in empty_list:
-            if "D" in row:
-                D_students.append(row)
-        # to find the students that got an E:
-        for row in empty_list:
-            if "E" in row:
-                E_students.append(row)
-        # to find the students that got an F:
-        for row in empty_list:
-            if "F" in row:
-                F_students.append(row)
+# with open("grades_summary.csv", "w", newline="") as summary:
+#     writer = csv.writer(summary)
+#     writer.writerow(["Grade", "Number of Students"])
+#     empty_list = []
+#     A_students = []
+#     B_students = []
+#     C_students = []
+#     D_students = []
+#     E_students = []
+#     F_students = []
+#     with open(file_csv, "r") as file:
+#         reader = csv.reader(file)
+#         for row in reader:
+#             empty_list.append(row)
+#         # to find the students that got an A:
+#         for row in empty_list:
+#             if "A" in row:
+#                 A_students.append(row)
+#         # to find the students that got an B:
+#         for row in empty_list:
+#             if "B" in row:
+#                 B_students.append(row)
+#         # to find the students that got an C:
+#         for row in empty_list:
+#             if "C" in row:
+#                 C_students.append(row)
+#         # to find the students that got an D:
+#         for row in empty_list:
+#             if "D" in row:
+#                 D_students.append(row)
+#         # to find the students that got an E:
+#         for row in empty_list:
+#             if "E" in row:
+#                 E_students.append(row)
+#         # to find the students that got an F:
+#         for row in empty_list:
+#             if "F" in row:
+#                 F_students.append(row)
 
-        list_of_grades = [
-            ["A", len(A_students)],
-            ["B", len(B_students)],
-            ["C", len(C_students)],
-            ["D", len(D_students)],
-            ["E", len(E_students)],
-            ["F", len(F_students)],
-        ]
+#         list_of_grades = [
+#             ["A", len(A_students)],
+#             ["B", len(B_students)],
+#             ["C", len(C_students)],
+#             ["D", len(D_students)],
+#             ["E", len(E_students)],
+#             ["F", len(F_students)],
+#         ]
 
-        writer.writerows(list_of_grades)
+#         writer.writerows(list_of_grades)
+
+
         
